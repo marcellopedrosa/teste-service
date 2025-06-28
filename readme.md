@@ -90,11 +90,7 @@ raiz-do-projeto/
 
 1. Certifique-se de que o Authorization Server esteja ativo.
 2. Configure as variáveis de ambiente:
-   ```
-   SPRING_SECURITY_OAUTH2_RESOURCESERVER_JWT_ISSUER_URI=https://seu-auth-server.com
-   SPRING_DATASOURCE_URL=jdbc:postgresql://localhost:5432/sua-base
-   SPRING_DATASOURCE_USERNAME=seu_usuario
-   SPRING_DATASOURCE_PASSWORD=sua_senha
+   - https://github.com/marcellopedrosa/teste-service/blob/main/infrastructure/src/main/resources/env.bat
    ```
 3. Compile e suba com:
    ```bash
