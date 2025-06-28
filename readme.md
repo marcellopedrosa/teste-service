@@ -89,10 +89,11 @@ raiz-do-projeto/
 ## ▶️ Execução
 
 1. Certifique-se de que o Authorization Server esteja ativo.
-2. Configure as variáveis de ambiente:
+2. Certifique-se de que o Spring Eureka Server esteja ativo.
+3. Configure as variáveis de ambiente:
    - https://github.com/marcellopedrosa/teste-service/blob/main/infrastructure/src/main/resources/env.bat
    ```
-3. Compile e suba com:
+4. Compile e suba com:
    ```bash
    mvn clean install
    cd infrastructure
