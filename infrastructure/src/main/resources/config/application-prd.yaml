@@ -1,0 +1,20 @@
+spring:
+  jpa:
+    open-in-view: false
+    properties:
+      hibernate:
+        cache:
+          use_second_level_cache: false
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: false
+        use_sql_comments: false
+    show-sql: false
+datasource:
+    hikari:
+      pool-name: AdminServiceHikariPool
+      connection-test-query: SELECT 1
+      maximum-pool-size: 20     # Máximo de conexões simultâneas
+      minimum-idle: 5           # Número mínimo de conexões ociosas
+      idle-timeout: 30000       # Tempo em ms antes de liberar conexão ociosa (opcional)
+      max-lifetime: 600000      # Tempo máximo de vida da conexão (opcional)
+      connection-timeout: 30000
