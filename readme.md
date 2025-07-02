@@ -90,10 +90,11 @@ raiz-do-projeto/
 
 1. Certifique-se de que o Authorization Server esteja ativo.
 2. Certifique-se de que o Spring Eureka Server esteja ativo.
-3. Configure as variáveis de ambiente:
+3. A role "api_teste_service" deve está configurada no auth server (ex: keycloak [ver role no security](https://github.com/marcellopedrosa/teste-service/blob/main/infrastructure/src/main/java/br/com/csc/teste_service/configuration/SecurityConfig.java]))
+4. Configure as variáveis de ambiente:
    - https://github.com/marcellopedrosa/teste-service/blob/main/infrastructure/src/main/resources/env.bat
    ```
-4. Compile e suba com:
+5. Compile e suba com:
    ```bash
    mvn clean install
    cd infrastructure
