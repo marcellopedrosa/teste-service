@@ -1,4 +1,4 @@
-package br.com.csc.admin_service.configuration;
+package br.com.csc.teste_service.configuration;
 
 import com.nimbusds.jwt.SignedJWT;
 import org.springframework.beans.factory.annotation.Value;
