@@ -36,7 +36,7 @@ public class SecurityConfig {
                 http.csrf(csrf -> csrf.disable())
                     .authorizeHttpRequests(auth -> 
                                 auth.requestMatchers(PUBLIC_ENDPOINTS).permitAll()
-                                        .anyRequest().hasRole("access_api"))
+                                        .anyRequest().hasRole("api_teste_service"))
                                 .oauth2ResourceServer(oauth2 -> 
                                         oauth2.jwt(jwt -> {
                                         jwt.decoder((String token) -> 
