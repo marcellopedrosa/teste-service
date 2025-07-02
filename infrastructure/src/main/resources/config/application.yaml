@@ -37,9 +37,9 @@ spring:
     active: dev
   security:
     oauth2:
-       resourceserver:
-        jwt:
-          issuer-uri: ${SPI_URI_SERVER}
+       #resourceserver:
+        #jwt:
+          #issuer-uri: ${SPI_URI_SERVER}
        client:
         registration:
           keycloak:
