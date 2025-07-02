@@ -13,7 +13,7 @@ eureka:
 
 spring:
   application:
-    name: ${KEYCLOAK_ADMIN_SERVICE_CLIENT_ID}
+    name: ${SPI_ADMIN_SERVICE_CLIENT_ID}
   datasource:
     url: ${DB_ADMIN_SERVICE_URL}
     username: ${DB_ADMIN_SERVICE_USERNAME}
@@ -39,18 +39,18 @@ spring:
     oauth2:
        resourceserver:
         jwt:
-          issuer-uri: ${KEYCLOAK_URI_SERVER}
+          issuer-uri: ${SPI_URI_SERVER}
        client:
         registration:
           keycloak:
-            client-id: ${KEYCLOAK_ADMIN_SERVICE_CLIENT_ID}
-            client-secret: ${KEYCLOAK_ADMIN_SERVICE_CLIENT_SECRET}
+            client-id: ${SPI_ADMIN_SERVICE_CLIENT_ID}
+            client-secret: ${SPI_ADMIN_SERVICE_CLIENT_SECRET}
             authorization-grant-type: authorization_code
             scope: openid, profile, email
             redirect-uri: "{baseUrl}/login/oauth2/code/keycloak"
         provider:
           keycloak:
-            issuer-uri: ${KEYCLOAK_URI_SERVER}
+            issuer-uri: ${SPI_URI_SERVER}
             user-name-attribute: preferred_username
 
 logging:
