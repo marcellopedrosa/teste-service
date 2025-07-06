@@ -13,7 +13,7 @@ raiz-do-projeto/
 └── infrastructure/   # Frameworks, APIs, repositórios, DTOs, mapeadores, adapters
 ```
 
-### 🧩 Diagrama ASCII de Relação entre Módulos
+### 🧩 Diagrama de Relação entre Módulos
 
 ```
                  +-----------------+
